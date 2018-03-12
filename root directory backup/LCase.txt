@@ -1,0 +1,30 @@
+program division;
+
+   uses crt;
+   uses graph;
+
+const   m=14;      {вариант}
+        e=0.0001; {погрешность}
+var 
+        counter:byte;
+        x,function,left,k,right:real;
+
+begin
+
+     clrscr; {очистка экрана}
+     left:=1;right:=2;
+     k:=1; i:=1;
+     while k>e do
+        begin
+          write(counter); {номер очередного приближения}
+          counter:=counter+1;
+          x:=(left+right)/2;
+          write('        ',x:9:8);    
+          function:=x*x*x+m*x-(2*m+1); {очередное значение функции}
+          writeln('          ',function:9:8);  
+          if function<0 then left:=x else right:=x;
+          if function<0 then k:=(-function) else k:=function; {условие выхода}
+       end;
+     readln;
+
+end.

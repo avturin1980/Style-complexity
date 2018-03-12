@@ -1,0 +1,11 @@
+stil1.pas - Style_computation_Main_Unit.pas
+Unit1.pas - Values_computation.pas
+Unit2.pas - About_Unit.pas
+Unit3.pas - Style_diagram.pas
+Unit4.pas - Range_and_Weight_Correction
+Unit5.pas - Close_Program_Confirm
+Unit6.pas - Style_help_Information
+Unit7.pas - Method_Definition
+Unit8.pas - Style_Values_Information
+
+
